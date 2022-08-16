@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .App-header {
-    @apply flex min-h-screen flex-col items-center justify-center bg-primary-dark text-[calc(10px+2vmin)] text-white;
-  }
+body {
+  @apply bg-purple-100;
+}
 
-  .App-link {
-    @apply text-primary-link;
-  }
+h1 {
+  @apply mx-auto my-3 flex flex-col text-center text-3xl font-semibold text-purple-400;
+}
 
-  .App-logo {
-    @apply pointer-events-none h-[40vmin] animate-App-logo motion-reduce:animate-none;
-  }
+form {
+}
+
+button {
 }
