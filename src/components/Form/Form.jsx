@@ -19,6 +19,8 @@ export default function Form({ setName }) {
 
     setName(submission.name);
 
+    Form[2] = "";
+
     event.target.reset();
   };
 
@@ -34,16 +36,13 @@ export default function Form({ setName }) {
         <input
           type="text"
           placeholder="Enter your name"
-          id="name"
-          className="text-md rounded-3xl border py-1 pl-2"
+          id="username"
+          className="text-md rounded-full border py-1 pl-2"
           name="name"
         />
       </div>
 
-      <button
-        type="submit"
-        className=" text-md mt-4 rounded-3xl bg-purple-400 px-4 py-1 font-semibold text-white hover:bg-purple-600"
-      >
+      <button id="submit" type="submit" className="submit-button">
         Submit
       </button>
     </form>
